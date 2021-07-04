@@ -24,12 +24,12 @@ jobs:
         cd ./src/core-packages/docker/
         echo "VERSION_TAG=${SHORT_SHA}" > build.env
         docker-compose --env-file build.env build
-    - name: Login to GitHub container registry
-      run: > 
-        echo ${{ github.GITHUB_TOKEN }} | 
-        docker login ghcr.io --username 
-        ${{ github.repository_owner }} 
-        --password-stdin
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     - name: Publish base docker images
       run: |
         cd ./src/core-packages/docker/
