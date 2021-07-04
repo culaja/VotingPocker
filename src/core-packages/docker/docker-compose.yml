@@ -1,6 +1,6 @@
 version: '3.7'
 services:
   eventstore-projection-creator:
-    image: ghcr.io/culaja/eventstore-projection-creator:${VERSION_TAG}
+    image: ghcr.io/culaja/eventstore-projection-creator:${EVENTSTORE_PROJECTION_CREATOR_VERSION_TAG}
     build:
       context: eventstore-projection-creator
