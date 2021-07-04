@@ -35,7 +35,7 @@ namespace VotingPocker.Infrastructure.EventStore
             using var subscription = await _client.SubscribeAsync(
                 persistedSubscriptionRequest.StreamName,
                 persistedSubscriptionRequest.SubscriptionGroupName,
-                async (s, resolvedEvent, _, _) =>
+                async (_, resolvedEvent, _, _) =>
                 {
                     if (resolvedEvent.IsResolved)
                     {
