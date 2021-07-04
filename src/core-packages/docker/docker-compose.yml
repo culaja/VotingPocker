@@ -4,3 +4,4 @@ services:
     image: ghcr.io/culaja/eventstore-projection-creator:${VERSION_TAG}
     build:
       context: eventstore-projection-creator
+ 
