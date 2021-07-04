@@ -26,7 +26,7 @@ jobs:
         docker-compose --env-file build.env build
     - name: Login to GitHub container registry
       run: > 
-        echo ${{secrets.PRIVATE_GITHUB_REGISTRY}} | 
+        echo ${{github.GITHUB_TOKEN}} | 
         docker login ghcr.io --username 
         ${{ github.repository_owner }} 
         --password-stdin
