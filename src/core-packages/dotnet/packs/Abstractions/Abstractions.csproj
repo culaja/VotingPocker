@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+        <AssemblyName>VotingPocker.Abstractions</AssemblyName>
+        <RootNamespace>VotingPocker.Abstractions</RootNamespace>
+        <PackageId>VotingPocker.Abstractions</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Stanko Culaja</Authors>
+        <RepositoryUrl>https://github.com/culaja/VotingPocker</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
