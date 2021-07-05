@@ -6,7 +6,7 @@ on:
       - 'src/core-packages/docker/**'
   create:
     tags:
-      - release=*
+      - '**'
 
 jobs:
   build-and-publish:
